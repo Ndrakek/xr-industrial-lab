@@ -1,123 +1,75 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 <meta charset="utf-8">
 <title>XR Industrial Lab</title>
-
 <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
-
 </head>
 
 <body>
-
 <a-scene>
 
 <!-- ===================== -->
-
 <!-- CARGAR MODELO 3D -->
-
 <!-- ===================== -->
-
 <a-assets>
-<a-asset-item id="modeloIndustrial" src="models/bici.glb"></a-asset-item>
+  <a-asset-item id="modeloIndustrial" src="models/bici.glb"></a-asset-item>
 </a-assets>
 
-<a-entity 
-gltf-model="#modeloIndustrial"
-position="-3 -7 -5"
-scale="0.1 0.1 0.1"> </a-entity>
+<a-entity  
+  gltf-model="#modeloIndustrial"
+  position="-3 0.5 -5"
+  scale="0.1 0.1 0.1">
+</a-entity>
 
 <!-- ===================== -->
-
 <!-- PRIMITIVAS BÁSICAS -->
+<!-- ===================== -->
+<a-box position="-2 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+
+<a-sphere position="2 1 -4" radius="1" color="#EF2D5E"></a-sphere>
+
+<a-cylinder position="-3 1 -4" radius="0.5" height="1.5"
+color="#FFC65D"></a-cylinder>
 
 <!-- ===================== -->
-
-<a-box position="-2 1 -3"
-rotation="0 45 0"
-color="#4CC3D9"> </a-box>
-
-<a-sphere position="2 1 -4"
-radius="1"
-color="#EF2D5E"> </a-sphere>
-
-<a-cylinder position="-3 1 -4"
-radius="0.5"
-height="1.5"
-color="#FFC65D"> </a-cylinder>
-
-<!-- ===================== -->
-
 <!-- PISO -->
+<!-- ===================== -->
+<a-plane rotation="-90 0 0" width="15" height="15"
+color="#7BC8A4"></a-plane>
 
 <!-- ===================== -->
-
-<a-plane rotation="-90 0 0"
-width="15"
-height="15"
-color="#7BC8A4"> </a-plane>
-
-<!-- ===================== -->
-
 <!-- TANQUE INDUSTRIAL -->
+<!-- ===================== -->
+<a-cylinder position="-2 1.5 -7" radius="1" height="3"
+color="#888"></a-cylinder>
+
+<a-cylinder position="-2 3.1 -7" radius="1.1" height="0.2"
+color="#666"></a-cylinder>
+
+<a-sphere position="-2 3.5 -7" radius="0.2"
+color="red"></a-sphere>
 
 <!-- ===================== -->
-
-<a-cylinder position="-2 1.5 -7"
-radius="1"
-height="3"
-color="#888"> </a-cylinder>
-
-<a-cylinder position="-2 3.1 -7"
-radius="1.1"
-height="0.2"
-color="#666"> </a-cylinder>
-
-<a-sphere position="-2 3.5 -7"
-radius="0.2"
-color="red"> </a-sphere>
-
-<!-- ===================== -->
-
 <!-- BANDA TRANSPORTADORA -->
+<!-- ===================== -->
+<a-box position="3 0.5 -7" width="6" height="1" depth="2"
+color="#555"></a-box>
+
+<a-box position="3 1 -7" width="6" height="0.2" depth="1.5"
+color="#222"></a-box>
+
+<a-cylinder position="0 1 -7" radius="0.4" height="1.5"
+rotation="0 90 90" color="#777"></a-cylinder>
+
+<a-cylinder position="6 1 -7" radius="0.4" height="1.5"
+rotation="0 90 90" color="#777"></a-cylinder>
 
 <!-- ===================== -->
-
-<a-box position="3 0.5 -7"
-width="6"
-height="1"
-depth="2"
-color="#555"> </a-box>
-
-<a-box position="3 1 -7"
-width="6"
-height="0.2"
-depth="1.5"
-color="#222"> </a-box>
-
-<a-cylinder position="0 1 -7"
-radius="0.4"
-height="1.5"
-rotation="0 90 90"
-color="#777"> </a-cylinder>
-
-<a-cylinder position="6 1 -7"
-radius="0.4"
-height="1.5"
-rotation="0 90 90"
-color="#777"> </a-cylinder>
-
-<!-- ===================== -->
-
 <!-- CIELO -->
-
 <!-- ===================== -->
-
 <a-sky color="#ECECEC"></a-sky>
 
 </a-scene>
-
 </body>
 </html>
