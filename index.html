@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>XR Industrial Lab</title>
+
+    <!-- Librería A-Frame -->
+    <script src="https://cdn.jsdelivr.net/npm/aframe@1.4.1/dist/aframe-master.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+<!-- Piso -->
+<a-plane rotation="-90 0 0"
+         width="15"
+         height="15"
+         color="#7BC8A4">
+</a-plane>
+
+<!-- ===================== -->
+<!-- TANQUE INDUSTRIAL -->
+<!-- ===================== -->
+
+<!-- Cuerpo del tanque -->
+<a-cylinder position="-2 1.5 -5"
+            radius="1"
+            height="3"
+            color="#888">
+</a-cylinder>
+
+<!-- Tapa del tanque -->
+<a-cylinder position="-2 3.1 -5"
+            radius="1.1"
+            height="0.2"
+            color="#666">
+</a-cylinder>
+
+<!-- Sensor del tanque -->
+<a-sphere position="-2 3.5 -5"
+          radius="0.2"
+          color="red">
+</a-sphere>
+
+<!-- ===================== -->
+<!-- BANDA TRANSPORTADORA -->
+<!-- ===================== -->
+
+<!-- Base de la banda -->
+<a-box position="3 0.5 -5"
+       width="6"
+       height="1"
+       depth="2"
+       color="#555">
+</a-box>
+
+<!-- Cinta de la banda -->
+<a-box position="3 1 -5"
+       width="6"
+       height="0.2"
+       depth="1.5"
+       color="#222">
+</a-box>
+
+<!-- Rodillo izquierdo -->
+<a-cylinder position="0 1 -5"
+            radius="0.4"
+            height="1.5"
+            rotation="0 90 90"
+            color="#777">
+</a-cylinder>
+
+<!-- Rodillo derecho -->
+<a-cylinder position="6 1 -5"
+            radius="0.4"
+            height="1.5"
+            rotation="0 90 90"
+            color="#777">
+</a-cylinder>
+
+</body>
+</html>
